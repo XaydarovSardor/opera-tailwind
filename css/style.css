@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    @apply font-Montserrat;
+}
+.container{
+    @apply 1350:max-w-[1278px] 1150:max-w-[1100px] lg:max-w-[1000px] lg:px-0 max-w-full px-5 lg:mx-auto ;
+}
+.header-link{
+    @apply font-normal text-13; 
+}
+.nav-list{
+    @apply transition-all ease-linear duration-300 
+}
+.nav-list.open{
+    @apply left-0 transition-all duration-300 ease-linear
+}
+.title-box{
+    @apply flex flex-col lg:mt-[60px] mt-[41px] 
+}
+
+.title-box .subtitle-box{
+    @apply flex lg:mb-[18px] mb-[22px] space-x-1;
+}
+.title-box h1{
+    @apply uppercase font-bold lg:text-40 md:text-30 text-2xl text-lightblack
+}
+.news-boxes{
+    grid-template-columns: repeat(auto-fit, minmax(405px, 1fr));
+}
+
+@media (max-width:1350px) {
+    .news-boxes{
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    }
+}
+@media (max-width:1024px) {
+    .news-boxes{
+        grid-template-columns: repeat(auto-fit, minmax(300px ,1fr));
+    }
+}
