@@ -479,6 +479,7 @@ a:focus {
   position: relative;
   background: #fff;
   border-radius: 50%;
+  cursor: pointer;
 }
 .main-section .main-bg__btns > button > img {
   position: absolute;
